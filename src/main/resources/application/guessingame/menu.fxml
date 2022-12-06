@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="menuError" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="259.0" prefWidth="364.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.guessingame.Controller">
+   <children>
+      <Button fx:id="playButton" layoutX="205.0" layoutY="171.0" mnemonicParsing="false" onAction="#playGame" prefHeight="58.0" prefWidth="145.0" style="-fx-background-color: Gray;" text="Play!" textAlignment="CENTER" textFill="#c4c7d0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutY="21.0" prefHeight="62.0" prefWidth="364.0" text="Guessing Game" textAlignment="CENTER" textFill="#e6e8ff">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="205.0" layoutY="103.0" prefHeight="39.0" prefWidth="82.0" text="Upper Limit:" textFill="#c7d0f2">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="upperLimit" layoutX="283.0" layoutY="110.0" onAction="#enter" prefHeight="25.0" prefWidth="69.0" promptText="ex. 100" />
+      <Label fx:id="error1" layoutX="14.0" layoutY="236.0" prefHeight="18.0" prefWidth="197.0" textFill="RED">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Separator layoutX="-6.0" layoutY="70.0" prefHeight="15.0" prefWidth="372.0" />
+      <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="97.0" prefHeight="26.0" prefWidth="145.0" text="How to play?" textFill="#dddee1" />
+      <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="130.0" prefHeight="24.0" prefWidth="174.0" text="1. Enter an upper bound" textFill="#dddee1" wrapText="true" />
+      <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="154.0" prefHeight="55.0" prefWidth="145.0" text="2. Guess a number from 0 to your upper bound" textFill="#dddee1" wrapText="true" />
+      <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="209.0" prefHeight="26.0" prefWidth="145.0" text="3. Enjoy" textFill="#dddee1" />
+   </children>
+</AnchorPane>
